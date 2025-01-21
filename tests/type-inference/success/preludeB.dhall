@@ -11,7 +11,12 @@
     , or : ∀(xs : List Bool) → Bool
     , show : ∀(b : Bool) → Text
     }
-, Date : { show : Date → Text }
+, Date :
+    { show : Date → Text
+    , year : Date → Natural
+    , month : Date → Natural
+    , day : Date → Natural
+    }
 , Double : { show : Double → Text }
 , Function :
     { compose :
@@ -627,7 +632,12 @@
     , spaces : ∀(a : Natural) → Text
     , upperASCII : ∀(nil : Text) → Text
     }
-, Time : { show : Time → Text }
+, Time : 
+    { show : Time → Text
+    , hour : Time → Natural
+    , minute : Time → Natural
+    , second : Time → Natural
+    }
 , TimeZone : { show : TimeZone → Text }
 , XML :
     { Type : Type

@@ -20,6 +20,15 @@
 , List/reverse
 , Text/show
 , Text/replace
+, Date/show
+, Date/year
+, Date/month
+, Date/day
+, Time/show
+, Time/hour
+, Time/minute
+, Time/second
+, TimeZone/show
 , Bool
 , True
 , False
@@ -31,6 +40,9 @@
 , Text
 , Bytes
 , List
+, Date
+, Time
+, TimeZone
 , Type
 , Kind
 , Sort
